@@ -1,2 +1,0 @@
-# INVENTARIO-CONTABLE
- inventario contable 

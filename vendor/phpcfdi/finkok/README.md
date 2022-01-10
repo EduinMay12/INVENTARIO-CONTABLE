@@ -1,1 +1,0 @@
-# phpcfdi/finkok
