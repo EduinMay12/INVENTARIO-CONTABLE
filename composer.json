@@ -1,0 +1,24 @@
+{
+    "name": "oficina/cfactura",
+    "description": "Proyecto de CFactura sistema de administracion contable, hecha por la desarrolladora CipalWeb",
+    "type": "project",
+    "require": {
+        "php": ">=7.3",
+        "illuminate/database": "5.5",
+        "dompdf/dompdf": "dev-master",
+        "phpcfdi/finkok": "^0.1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Oficina\\Cfactura\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduiin Maay",
+            "email": "61023101+EduinMay12@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
