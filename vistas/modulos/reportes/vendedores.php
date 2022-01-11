@@ -44,25 +44,18 @@ $noRepetirNombres = array_unique($arrayVendedores);
 <!--=====================================
 VENDEDORES
 ======================================-->
-
-<div class="box box-success">
-	
-	<div class="box-header with-border">
-    
-    	<h3 class="box-title">Vendedores</h3>
-  
-  	</div>
-
-  	<div class="box-body">
-  		
-		<div class="chart-responsive">
-			
-			<div class="chart" id="bar-chart1" style="height: 300px;"></div>
-
+<div class="col-lg-12 col-md-4 mt-4 mb-4">
+	<div class="card z-index-2  ">
+		<div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+			<div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+				<div class="chart">
+                  <div class="chart" id="bar-chart1" height="170"></div>
+                </div>
+			</div>
 		</div>
-
-  	</div>
-
+		<div class="card-body">
+		<h6 class="mb-0 "> Vendedores </h6>
+	</div>
 </div>
 
 <script>
