@@ -57,7 +57,8 @@ if($_SESSION["perfil"] == "Vendedor"){
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Categoria</th>
+           <th>Categoria</th>  
+                
            <th>Acciones</th>
 
          </tr> 
