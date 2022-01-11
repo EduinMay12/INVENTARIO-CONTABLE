@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container-fluid py-4">
 
   <section class="content-header">
     
@@ -19,7 +19,7 @@
     </ol>
 
   </section>
-
+	<br>
   <section class="content">
 
     <div class="row">

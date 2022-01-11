@@ -13,7 +13,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 }
 
 ?>
-<div class="content-wrapper">
+<div class="container-fluid py-4">
 
   <section class="content-header">
     
@@ -52,7 +52,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
           </button>
 
         </div>
-
+		
+		<button class="btn btn-success" style="margin-top:5px">Descargar reporte en Excel</button>
+		
         <div class="box-tools pull-right">
 
         <?php
@@ -68,15 +70,13 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
         }         
 
         ?>
-           
-           <button class="btn btn-success" style="margin-top:5px">Descargar reporte en Excel</button>
-
+          
           </a>
 
         </div>
          
       </div>
-
+		
       <div class="box-body">
         
         <div class="row">
@@ -90,28 +90,8 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
             ?>
 
           </div>
-
-           <div class="col-md-6 col-xs-12">
-             
-            <?php
-
-            include "reportes/productos-mas-vendidos.php";
-
-            ?>
-
-           </div>
-
-            <div class="col-md-6 col-xs-12">
-             
-            <?php
-
-            include "reportes/vendedores.php";
-
-            ?>
-
-           </div>
-
-           <div class="col-md-6 col-xs-12">
+		  
+		  <div class="col-md-6 col-xs-12">
              
             <?php
 
@@ -120,9 +100,31 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
             ?>
 
            </div>
+
+			<div class="col-md-6 col-xs-12">
+             
+            <?php
+
+            include "reportes/vendedores.php";
+
+            ?>
+
+           </div>
+		   
+           
           
         </div>
+		
+		<div class="col-md-6 col-xs-12">
+             
+            <?php
 
+            include "reportes/productos-mas-vendidos.php";
+
+            ?>
+
+        </div>
+		
       </div>
       
     </div>

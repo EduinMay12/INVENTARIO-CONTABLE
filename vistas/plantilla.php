@@ -22,9 +22,6 @@ session_start();
   PLUGINS DE CSS
   ======================================-->
 
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="vistas/bower_components/bootstrap/dist/css/bootstrap.min.css">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="vistas/bower_components/font-awesome/css/font-awesome.min.css">
 
@@ -127,8 +124,23 @@ session_start();
 <!--=====================================
 CUERPO DOCUMENTO
 ======================================-->
-
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">
+<style>
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-image: url('img/welcome-bg-two.svg');
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+</style>
+<body class="g-sidenav-show  bg-gray-200">
  
   <?php
 
@@ -140,13 +152,13 @@ CUERPO DOCUMENTO
     CABEZOTE
     =============================================*/
 
-    include "modulos/cabezote.php";
+    include "modulos/menu.php";
 
     /*=============================================
     MENU
     =============================================*/
 
-    include "modulos/menu.php";
+    include "modulos/cabezote.php";
 
     /*=============================================
     CONTENIDO
