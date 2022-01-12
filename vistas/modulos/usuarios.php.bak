@@ -195,7 +195,7 @@ MODAL AGREGAR USUARIO
 			<form>
 			  <div class="form-group">
 				<label for="">Contraseña</label>
-				<input type="password" class="form-control" name="nuevoPassword" placeholder="Ingresar contraseña" required>
+				<input type="text" class="form-control" name="nuevoPassword" placeholder="Ingresar contraseña" required>
 			  </div>
 			</form>
              

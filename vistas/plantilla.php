@@ -57,14 +57,8 @@ session_start();
   <!-- jQuery 3 -->
   <script src="vistas/bower_components/jquery/dist/jquery.min.js"></script>
   
-  <!-- Bootstrap 3.3.7 -->
-  <script src="vistas/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
   <!-- FastClick -->
   <script src="vistas/bower_components/fastclick/lib/fastclick.js"></script>
-  
-  <!-- AdminLTE App -->
-  <script src="vistas/dist/js/adminlte.min.js"></script>
 
   <!-- DataTables -->
   <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -101,7 +95,6 @@ session_start();
 
 
   <!--   Core JS Files   -->
-  <script src="vistas/js/core/popper.min.js"></script>
   <script src="vistas/js/core/bootstrap.min.js"></script>
   <script src="vistas/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="vistas/js/plugins/smooth-scrollbar.min.js"></script>
@@ -113,11 +106,16 @@ session_start();
       }
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
+	$('#myModal').on('shown.bs.modal', function () {
+	  $('#myInput').trigger('focus')
+	})
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="vistas/js/material-dashboard.min.js?v=3.0.0"></script>
+
   
 </head>
 
@@ -138,6 +136,44 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	background-repeat: no-repeat;
 	background-size: auto;
+}
+.bg-gradient-primary {
+	 background-image: linear-gradient(195deg, #006bf7 0%, #2a2578 100%);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #495057;
+    background-color: #d6dce1;
+    background-clip: padding-box;
+    border: 1px solid #d2d6da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: 0.2s ease;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
 }
 </style>
 <body class="g-sidenav-show  bg-gray-200">
