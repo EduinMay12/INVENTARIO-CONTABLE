@@ -17,7 +17,7 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 PRODUCTOS MÁS VENDIDOS
 ======================================-->
 <div class="col-lg-6 col-md-6 mt-4 mb-4">
-	<div class="card z-index-2  ">
+	<div class="card z-index-2">
 		<div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
 			<div class="bg-gradient-warning shadow-warning border-radius-lg py-3 pe-1">
                 <div class="chart">
@@ -32,6 +32,7 @@ PRODUCTOS MÁS VENDIDOS
 		</div>
 	</div>
 </div>
+
 <div class="box box-default">
 	
 	<div class="box-header with-border">
